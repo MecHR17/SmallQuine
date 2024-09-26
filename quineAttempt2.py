@@ -1,33 +1,20 @@
 def A():
-    return """self = A()
-og_self = self
-x = self.find(chr(34)*3)
-self = self[:x] + chr(92) + self[x:]
-x = self.find("}"+chr(34)*3)
-self = self[:x+1] + chr(92) + self[x+1:]
-total = ""
-total += 'def A():' + chr(10)
-total += f'    return \"""{self}\"""' + chr(10)
-total += chr(10)
-total += og_self
-# We have obtained the TOTAL. Do anything you want with it
+    return """tripleQuotes = chr(34)*3
+newline = chr(10)
+B_self = A()
+A_self = newline.join(["def A():",f"    return {tripleQuotes}{B_self}{tripleQuotes}"])
+self = newline.join([A_self,B_self])
+# We have obtained the <SELF>. Do anything you want with it
 # Add anything you do here to the end of A's string
-# Don't use triple quotes
-print(len(total), end="")
+# Use chr(x) instead of slashes, don't use triple quotes
+print(len(self), end="")
 """
-
-self = A()
-og_self = self
-x = self.find(chr(34)*3)
-self = self[:x] + chr(92) + self[x:]
-x = self.find("}"+chr(34)*3)
-self = self[:x+1] + chr(92) + self[x+1:]
-total = ""
-total += 'def A():' + chr(10)
-total += f'    return """{self}"""' + chr(10)
-total += chr(10)
-total += og_self
-# We have obtained the TOTAL. Do anything you want with it
+tripleQuotes = chr(34)*3
+newline = chr(10)
+B_self = A()
+A_self = newline.join(["def A():",f"    return {tripleQuotes}{B_self}{tripleQuotes}"])
+self = newline.join([A_self,B_self])
+# We have obtained the <SELF>. Do anything you want with it
 # Add anything you do here to the end of A's string
-# Don't use triple quotes
-print(len(total), end="")
+# Use chr(x) instead of slashes, don't use triple quotes
+print(len(self), end="")
