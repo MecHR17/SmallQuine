@@ -8,7 +8,7 @@ self_code = newline.join([A_self,B_self])
 with open("quineInput.py","r") as f:
     code = f.readlines()
     code = code[1:]
-    code = "\n".join(code)
+    code = "".join(code)
     triple_quotes = "\""*3
     total += "\n".join(["def A():",f"    return {triple_quotes}{B}{code}{triple_quotes}\n"])
     total += B
