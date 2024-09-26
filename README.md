@@ -10,3 +10,4 @@ About the Quine Constructor:
 - The first line in "quineInput.py" is for setting "self_code" to a random value
 - "self_code" is what \<T> uses to access its own code.
 - The standard rules apply. Backslashes and triple quotes are not permitted
+- \<B> is static. The maker reads \<T> to form <A> that outputs <B,T>, then writes <B,T>
