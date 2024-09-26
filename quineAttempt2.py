@@ -10,6 +10,9 @@ total += 'def A():' + chr(10)
 total += f'    return \"""{self}\"""' + chr(10)
 total += chr(10)
 total += og_self
+# We have obtained the TOTAL. Do anything you want with it
+# Add anything you do here to the end of A's string
+# Don't use triple quotes
 print(len(total), end="")
 """
 
@@ -24,4 +27,7 @@ total += 'def A():' + chr(10)
 total += f'    return """{self}"""' + chr(10)
 total += chr(10)
 total += og_self
+# We have obtained the TOTAL. Do anything you want with it
+# Add anything you do here to the end of A's string
+# Don't use triple quotes
 print(len(total), end="")
