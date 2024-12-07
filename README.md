@@ -12,4 +12,4 @@ About the Quine Constructor:
 - The standard rules apply. Backslashes and triple quotes are not permitted
 - \<B> is static. The maker reads \<T> to form \<A> that outputs <B,T>, then writes <B,T>
 
-Note: There is a much easier way to achieve this by storing <B,T> as a list in <A>. But this code aims to highlight the section where B does work to compute the function that outputs <B,T>.
+Note: There is a much easier way to achieve this by storing <B,T> as a list in \<A>. But this code aims to highlight the section where B does work to compute the function that outputs <B,T>.
